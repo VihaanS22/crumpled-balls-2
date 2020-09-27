@@ -6,10 +6,10 @@ class Box {
           'density':1.0
       }
 
-     this.image = loadImage("dustbin.png");
+     this.image = loadImage("dustbin1.png");
       this.body = Bodies.rectangle(x, y, width, height, options);
-      this.width = width;
-      this.height = height;
+      this.width = width + 60;
+      this.height = height ;
      
       Matter.Body.setAngle(this.body, angle)
       
@@ -25,8 +25,8 @@ class Box {
       fill("green");
       rect(0, 0, this.width, this.height);
      */
-     imageMode(CENTER);
-      image(this.image, 0, 0, this.width, this.width, this.height, this.height);
+    imageMode(CENTER);
+    image(this.image, 0, 0, this.width, this.width, this.height, this.height);
       pop();
     }
   };

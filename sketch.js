@@ -24,9 +24,9 @@ function setup() {
 	
 ball = new Paper(20, 100, 20)
 ground = new Ground(600,height,1600,20)
-//line1 = new Box(1150, 330, 10, 140, -15)
-line2 = new Box(1297, 330, 10, 140, 15)
-line3 = new Box(1250, 350, 140, 10)
+line1 = new Box(1130, 330, 10, 140, -15)
+line2 = new Box(1300, 330, 10, 140, 15)
+line3 = new Box(1250, 300, 140, 10)
 
 
 
@@ -48,7 +48,7 @@ function draw() {
 ball.display();
 ground.display();
 //line1.display();
-line2.display();
+//line2.display();
 line3.display();
 
 drawSprites();
